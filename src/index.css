@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+html, body, #root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes float3d {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes contactShadow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.82);
+    opacity: 0.18;
+  }
+}
+
+.animate-float-3d {
+  animation: float3d 4s ease-in-out infinite;
+}
+
+.animate-contact-shadow {
+  animation: contactShadow 4s ease-in-out infinite;
+}
+

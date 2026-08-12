@@ -1,0 +1,6 @@
+{
+  "name": "Sankalp Fruits & Food Products",
+  "description": "Official online catalogue for 100% Maharashtra farm-fresh fruits with direct WhatsApp ordering and photorealistic 3D presentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
